@@ -2,7 +2,7 @@
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Paper](https://img.shields.io/badge/Paper-ArXiv-red.svg)](https://arxiv.org/abs/YOUR_PAPER)
+<!-- [![Paper](https://img.shields.io/badge/Paper-ArXiv-red.svg)](https://arxiv.org/abs/YOUR_PAPER) -->
 
 **Meta Thinker** is a novel approach to LLM reasoning that enables models to adaptively select or invent reasoning strategies based on problem characteristics, rather than using a fixed strategy like Chain-of-Thought (CoT).
 
@@ -713,7 +713,6 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 - **Author**: Junyu Guo
 - **Email**: junyuguo24@berkeley.edu
-- **Project Link**: https://github.com/your-username/meta-thinker
 
 
 
