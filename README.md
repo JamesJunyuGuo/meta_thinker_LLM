@@ -25,7 +25,6 @@
 - [Datasets](#datasets)
 - [Usage Examples](#usage-examples)
 - [Configuration](#configuration)
-- [Citation](#citation)
 - [Acknowledgments](#acknowledgments)
 
 ## 🚀 Quick Start
