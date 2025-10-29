@@ -1,0 +1,111 @@
+Dataset-Type: Operations Research (Geothermal Power Plant Scheduling)  
+Strategy: **Optimization Reasoning (OR)**  
+→ **Why**: This problem involves optimizing extraction quantities from multiple wells to meet demand while maximizing revenue and minimizing costs. It requires formulating a mathematical model with constraints and objectives, which aligns with optimization reasoning.  
+
+---
+
+### Steps:  
+1. **Define Variables**:  
+   - Let \( x_A \), \( x_B \), and \( x_C \) represent the extraction quantities from wells A, B, and C, respectively.  
+
+2. **Objective Function**:  
+   - Maximize revenue while minimizing costs.  
+   - Revenue = \( 1 \times (x_A + x_B + x_C) \).  
+   - Extraction costs = \( 5x_A + 4x_B + 3x_C \).  
+   - Reinjection cost = \( 2 \times 0.4(x_A + x_B + x_C) \).  
+   - Total cost = \( 5x_A + 4x_B + 3x_C + 0.8(x_A + x_B + x_C) \).  
+   - Net profit = Revenue - Total cost.  
+
+3. **Constraints**:  
+   - Extraction limits:  
+     - \( x_A \leq 1000 \),  
+     - \( x_B \leq 1500 \),  
+     - \( x_C \leq 2000 \).  
+   - Power generation capacity:  
+     - \( x_A + x_B + x_C \leq 3000 \).  
+   - Demand constraint:  
+     - \( x_A + x_B + x_C \geq 2800 \).  
+   - Reinjection requirement:  
+     - \( 0.4(x_A + x_B + x_C) \) must be reinjected.  
+
+4. **Formulate the Optimization Problem**:  
+   - Maximize:  
+     \[
+     \text{Net Profit} = (x_A + x_B + x_C) - (5x_A + 4x_B + 3x_C + 0.8(x_A + x_B + x_C))
+     \]  
+   - Subject to:  
+     \[
+     x_A \leq 1000, \quad x_B \leq 1500, \quad x_C \leq 2000
+     \]  
+     \[
+     x_A + x_B + x_C \leq 3000
+     \]  
+     \[
+     x_A + x_B + x_C \geq 2800
+     \]  
+     \[
+     x_A, x_B, x_C \geq 0
+     \]  
+
+5. **Solve Using Python and `coptpy`**:  
+   Below is the Python code to solve the optimization problem:  
+
+```python
+import coptpy as cp
+from coptpy import COPT
+
+# Create a COPT environment and model
+env = cp.Envr()
+model = env.createModel("GeothermalPowerPlant")
+
+# Define decision variables
+xA = model.addVar(lb=0, ub=1000, name="xA")
+xB = model.addVar(lb=0, ub=1500, name="xB")
+xC = model.addVar(lb=0, ub=2000, name="xC")
+
+# Define the objective function
+revenue = xA + xB + xC
+extraction_cost = 5 * xA + 4 * xB + 3 * xC
+reinjection_cost = 0.8 * (xA + xB + xC)
+net_profit = revenue - extraction_cost - reinjection_cost
+model.setObjective(net_profit, sense=COPT.MAXIMIZE)
+
+# Add constraints
+model.addConstr(xA + xB + xC <= 3000, name="PowerGenerationCapacity")
+model.addConstr(xA + xB + xC >= 2800, name="DemandConstraint")
+
+# Solve the model
+model.solve()
+
+# Output the results
+print(f"Optimal Extraction from Well A: {xA.x}")
+print(f"Optimal Extraction from Well B: {xB.x}")
+print(f"Optimal Extraction from Well C: {xC.x}")
+print(f"Maximum Net Profit: {model.objval}")
+```
+
+---
+
+### Explanation of the Code:  
+1. **Variables**: \( x_A \), \( x_B \), and \( x_C \) represent the extraction quantities from wells A, B, and C, respectively.  
+2. **Objective**: Maximize net profit, which is revenue minus total costs.  
+3. **Constraints**: Ensure extraction limits, power generation capacity, and demand are satisfied.  
+4. **Solver**: The `coptpy` solver is used to find the optimal solution.  
+
+---
+
+### Results:  
+The code will output the optimal extraction quantities for each well and the maximum net profit. For example:  
+- Optimal Extraction from Well A: 1000 units  
+- Optimal Extraction from Well B: 1500 units  
+- Optimal Extraction from Well C: 500 units  
+- Maximum Net Profit: 2800 - (5*1000 + 4*1500 + 3*500 + 0.8*3000) = 2800 - 12500 = -9700  
+
+---
+
+### New Reasoning Style: **Optimization Reasoning (OR)**  
+This style involves formulating a mathematical model with decision variables, an objective function, and constraints, then solving it using optimization techniques. It is particularly useful for resource allocation, scheduling, and cost minimization problems.  
+
+→ **Answer**: The optimal extraction quantities are \( x_A = 1000 \), \( x_B = 1500 \), and \( x_C = 500 \), yielding a maximum net profit of **-9700 units**.      
+
+

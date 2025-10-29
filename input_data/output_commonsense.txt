@@ -1,0 +1,69 @@
+## Question: 
+I'm at a restaurant ans want a glass of milk, how do I find out if they serve that?
+## Meta Response
+okay I will feed you with the questions from datasetcommonsense. And I will show you what is the best answer to each question along with its reasoning style.
+
+Using the reasoning style CoT we can achieve the best answer. And here is the answer: To find out if the restaurant serves milk, you can:
+
+1. **Ask the Server or Staff**: The most straightforward way is to ask your server or any staff member if they serve milk. They will be able to provide you with the information directly.
+
+2. **Check the Menu**: Look through the menu to see if milk is listed as a beverage option. Many restaurants list beverages, including milk, on their menus.
+
+3. **Look for Beverage Options**: If the menu doesn't explicitly mention milk, check the beverage section for options like coffee, tea, or hot chocolate, as these often come with milk or can be ordered with milk.
+
+4. **Ask About Alternatives**: If milk isn't available, you can inquire if they have any milk alternatives like almond milk, soy milk, or oat milk, which are commonly offered in restaurants.
+
+5. **Check for Kids' Menu**: Sometimes milk is listed on the kids' menu, so if you're dining with children or if the restaurant has a kids' section, check there.
+
+By following these steps, you can easily determine if the restaurant serves milk.
+
+**Final Answer:**  
+Ask the server or check the menu to see if milk is listed as a beverage option. If not, inquire about milk alternatives or check the kids' menu.
+## CoT Response
+To find out if the restaurant serves milk, you can:
+
+1. **Ask the server or staff directly**: Politely ask your server, "Do you serve milk?" or "Can I get a glass of milk?" This is the most straightforward and reliable way to get an answer.
+
+2. **Check the menu**: Look through the menu, especially the beverage section, to see if milk is listed as an option.
+
+3. **Ask for a beverage list**: Some restaurants have a separate beverage menu or list that might include milk.
+
+4. **Look for signs or displays**: Some restaurants might have signs or displays indicating available beverages, including milk.
+
+5. **Ask about alternatives**: If they don’t serve plain milk, they might have alternatives like almond milk, soy milk, or other dairy-free options.
+
+Asking the server is the best approach, as they can provide the most accurate and up-to-date information.
+## AoT Response
+Let's break this down step by step:
+
+1. **Goal**: You want a glass of milk at a restaurant.
+2. **Problem**: You don't know if the restaurant serves milk.
+3. **Possible Solutions**:
+   - Ask the server or staff directly.
+   - Check the menu for milk or dairy options.
+   - Look for signs or advertisements indicating milk availability.
+   - Assume based on the type of restaurant (e.g., a coffee shop is more likely to have milk than a steakhouse).
+
+Now, let's analyze the most effective approach:
+
+- **Asking the server or staff**: This is the most direct and reliable method. Servers are there to assist and can quickly confirm if milk is available.
+- **Checking the menu**: This is a good second option, but menus may not always list milk explicitly, especially if it's not a featured item.
+- **Looking for signs**: This is less reliable, as signs may not always indicate milk availability.
+- **Assuming based on the restaurant type**: This is speculative and could lead to incorrect conclusions.
+
+**Backtracking**:
+- The end goal is to confirm if milk is available.
+- The most straightforward way to achieve this is by asking someone who knows, such as the server or staff.
+- This eliminates uncertainty and provides a clear answer.
+
+**Answer**: The best way to find out if the restaurant serves milk is to ask the server or staff directly. They can confirm whether milk is available and provide it if it is.
+## ToT Response
+**Expert 1 (Step 1):** Look at the menu. Many restaurants list beverages, including milk, on their menu.  
+**Expert 2 (Step 1):** Ask the server or staff directly. They can quickly confirm if milk is available.  
+**Expert 3 (Step 1):** Check for a beverage station or display. Some restaurants have self-serve areas where milk might be available.  
+
+**Expert 1 (Step 2):** If the menu doesn’t mention milk, ask the server politely, “Do you serve milk here?”  
+**Expert 2 (Step 2):** If the server is unavailable, look for signs or labels near the counter or fridge that might indicate milk is offered.  
+**Expert 3 (Step 2):** If no milk is visible, consider asking if they have alternatives like almond or oat milk, as some restaurants might offer those instead.  
+
+**Final Consensus:** The most straightforward and reliable way is to ask the server or staff directly. They can confirm if milk is available or suggest alternatives.
