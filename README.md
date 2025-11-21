@@ -1,10 +1,33 @@
-# Meta Thinker: Adaptive Reasoning for Large Language Models
+# Meta Thinker: Thinking What AI Thinks
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-<!-- [![Paper](https://img.shields.io/badge/Paper-ArXiv-red.svg)](https://arxiv.org/abs/YOUR_PAPER) -->
+[![Paper](https://img.shields.io/badge/Paper-OpenReview-red.svg)](https://openreview.net/pdf?id=JiMvrQsZde)
 
-**Meta Thinker** is a novel approach to LLM reasoning that enables models to adaptively select or invent reasoning strategies based on problem characteristics, rather than using a fixed strategy like Chain-of-Thought (CoT).
+## Overview
+
+**Meta Thinker** introduces a novel paradigm for LLM reasoning that enables models to adaptively select or dynamically invent reasoning strategies tailored to specific problem characteristics. Unlike traditional fixed-strategy approaches such as Chain-of-Thought (CoT), Meta Thinker allows AI systems to think about how they think, resulting in more flexible and effective problem-solving across diverse domains.
+
+## Key Features
+
+- **Adaptive Strategy Selection**: Automatically chooses the most appropriate reasoning approach for each problem
+- **Dynamic Strategy Generation**: Invents novel reasoning patterns when existing strategies are insufficient
+- **Problem-Aware Reasoning**: Analyzes problem characteristics to determine optimal thinking processes
+- **Enhanced Performance**: Outperforms traditional fixed-strategy methods across various reasoning tasks
+
+## Citation
+
+If you find our work helpful, please consider citing our paper:
+```bibtex
+@inproceedings{
+  guo2025meta,
+  title={Meta Thinker: Thinking What {AI} Thinks},
+  author={Junyu Guo and Shangding Gu and Costas Spanos and Javad Lavaei},
+  booktitle={The 5th Workshop on Mathematical Reasoning and AI at NeurIPS 2025},
+  year={2025},
+  url={https://openreview.net/forum?id=JiMvrQsZde}
+}
+```
 
 ## 🌟 Key Features
 
